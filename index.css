@@ -1,0 +1,308 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #004d66;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 1em 0 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #006080;
+    border-radius: 5px;
+}
+
+/* Responsive Menu Button */
+#menu {
+    display: none;
+    background-color: #004d66;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#menu:hover {
+    background-color: #006080;
+}
+
+/* Intro Section */
+#intro {
+    background: url('images/Background.jpg')  no-repeat center center;
+    background-size: cover ;  
+    padding: 450px 100px;     
+    color: white;  
+    
+}
+
+
+#intro h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+#intro p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Plans Section */
+#plans {
+    padding: 50px 20px;
+    background: url('images/Travel.jpg')  no-repeat center center;
+
+    text-align: center;
+}
+
+#plans h2 {
+    font-size: 4em;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.plan-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background-color: #f4f4f4;
+
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.plan h3 {
+    font-size: 1.5em;
+    color: #004d66;
+}
+
+.plan p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Package Section */
+#packages {
+    padding: 50px 20px;
+    background-color:none;
+    text-align: center;
+    
+}
+
+#packages h2 {
+    font-size: 3em;
+    color: #004d66;
+    margin-bottom: 30px;
+}
+
+#month-filter {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #004d66;
+}
+
+#package-list {
+    list-style: none;
+    font-size: large;
+    background-color: #f4f4f4;
+
+    border-radius: 30px;
+    padding: 50px;
+    margin: 40px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background-color: #004d66;
+    color: white;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+#contact p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#contact ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#contact ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+#contact ul li a:hover {
+    color: #00cccc;
+}
+
+#contact ul li i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Responsive Contact Section */
+@media (max-width: 768px) {
+    #contact ul li {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    #contact ul li a {
+        font-size: 1.2em;
+    }
+}
+
+/* Reviews Section */
+#reviews {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#reviews h2 {
+    font-size: 2em;
+    color: #004d66;
+    margin-bottom: 40px;
+}
+
+.reviews-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.review {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+    margin: 10px;
+    text-align: left;
+    color: #333;
+    font-style: italic;
+}
+
+.review p:last-child {
+    text-align: right;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Add Review Form */
+#review-form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#review-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    font-family: inherit;
+    resize: vertical;
+}
+
+#review-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+#review-form button {
+    background-color: #004d66;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#review-form button:hover {
+    background-color: #006080;
+}
+

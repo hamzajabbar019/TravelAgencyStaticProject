@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Explore the World with Us</h1>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+            </ul>
+            <button id="menu">Menu</button>
+        </nav>
+    </header>
+
+    <section id="intro">
+    
+    </section>
+
+    <section id="plans">
+        <h2>Our Plans</h2>
+        <div class="plan-grid">
+            <div class="plan">
+                <h3>Adventure Trip</h3>
+                <p>Experience thrilling adventures in the mountains, deserts, and jungles.</p>
+                <p><strong>Starting from 90,000</strong></p>
+            </div>
+            <div class="plan">
+                <h3>Luxury Cruise</h3>
+                <p>Relax in luxury as you sail across the most beautiful oceans.</p>
+                <p><strong>Starting from 60,000</strong></p>
+            </div>
+            <div class="plan">
+                <h3>Historical Tour</h3>
+                <p>Explore ancient ruins and cities, filled with rich history and culture.</p>
+                <p><strong>Starting from 70,000 </strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages">
+        <h2>Available Packages</h2>
+        <label for="month-filter">Filter by Month:</label>
+        <select id="month-filter">
+            <option value="all">All</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+        </select>
+
+        <ul id="package-list">
+            <li data-month="July">Skardu | Hunza | Dosai: <strong>July 15 - July 22</strong></li>
+            <li data-month="August">Islamabad | Naran | Kagan | Muree: <strong>August 5 - August 12</strong></li>
+            <li data-month="September">Kashmir | Neelam Valley | Banjosa Lake: <strong>September 1 - September 8</strong></li>
+            <li data-month="October">Quetta | Lahore | Rawalpindi: <strong>October 10 - October 20</strong></li>
+        </ul>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <strong>info@travelagency.com</strong></p>
+        <p>Phone: <strong>+92 317 2293322</strong></p>
+        <p>Follow us on social media:</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </section>
+
+    <section id="reviews">
+        <h2>What Our Customers Say</h2>
+        <div class="reviews-grid" id="reviews-grid">
+            <div class="review">
+                <p>"The adventure trip to the Alps was a once-in-a-lifetime experience. Highly recommend!"</p>
+                <p>- Alex M.</p>
+            </div>
+            <div class="review">
+                <p>"Our family loved the luxury cruise! Amazing service and beautiful views!"</p>
+                <p>- Sarah J.</p>
+            </div>
+        </div>
+        <h3>Add Your Review</h3>
+        <form id="review-form">
+            <textarea id="review-text" placeholder="Write your review..."></textarea>
+            <input type="text" id="review-name" placeholder="Your name">
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Travel Agency.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
